@@ -1,0 +1,175 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Spectral:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== z index ==========*/
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.938rem;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  color: #2b9db5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+/* For medium devices */
+/* For large devices */
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+/******ALL FILES TO IMPORT*****/
+/**Develop Styles*/
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/header_bkg.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1b998b;
+  opacity: 0.5;
+  z-index: -1;
+}
+header .header_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+header .header_wrapper .nav_bar {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+}
+header .header_wrapper .content_header_wrapper {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+header .header_wrapper .content_header_wrapper .header_main_content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
+header .header_wrapper .content_header_wrapper .header_main_content h2 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+header .header_wrapper .content_header_wrapper .header_main_content p {
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+  width: 80%;
+}
+header .header_wrapper .content_header_wrapper .header_main_content button {
+  font-size: 0.8rem;
+  padding: 7px 40px;
+  background-color: #2b9db5;
+  color: white;
+  border-radius: 2px;
+  text-transform: lowercase;
+  border: none;
+}
+header .header_wrapper .content_header_wrapper .header_main_content .bottom_content {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+header .header_wrapper .content_header_wrapper .header_main_content .bottom_content .services_header_explained {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header_wrapper .content_header_wrapper .header_main_content .bottom_content .services_header_explained span {
+  font-size: 0.8rem;
+}
+header .header_wrapper .content_header_wrapper .header_main_content .bottom_content .services_header_explained i {
+  font-size: 1.8rem;
+}
+header .header_wrapper .content_header_wrapper .side_wrapper {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+header .header_wrapper .content_header_wrapper .side_wrapper .social_links_header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header .header_wrapper .content_header_wrapper .side_wrapper > * {
+  color: white;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+header nav * {
+  color: white;
+}
+header nav .nav_links {
+  display: flex;
+  gap: 30px;
+}/*# sourceMappingURL=styles.css.map */

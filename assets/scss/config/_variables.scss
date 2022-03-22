@@ -1,0 +1,29 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Spectral:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+
+$header-height: 3.5rem;
+
+/*========== Colors ==========*/
+$body-color: #ffffff;
+$brand-color: #2b9db5;
+$action-color: #1b998b;
+
+/*========== Font and typography ==========*/
+$body-font: "Montserrat", sans-serif;
+$title-font: "Spectral", serif;
+$big-font-size: 1.5rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+
+// Responsive typography
+@media screen and (min-width: 968px) {
+  $big-font-size: 2rem;
+  $normal-font-size: 1rem;
+  $small-font-size: 0.875rem;
+}
+
+/*========== z index ==========*/
+$z-first: 100;
+$z-second: 10;
+$z-third: 1;
