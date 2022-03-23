@@ -126,7 +126,8 @@ header .header_wrapper .content_header_wrapper .header_main_content button {
 header .header_wrapper .content_header_wrapper .header_main_content .bottom_content {
   display: flex;
   gap: 13px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
+  padding-top: 90px;
   font-size: 1rem;
 }
 header .header_wrapper .content_header_wrapper .header_main_content .bottom_content .services_header_explained {
@@ -148,7 +149,7 @@ header .header_wrapper .content_header_wrapper .side_wrapper {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 1.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 header .header_wrapper .content_header_wrapper .side_wrapper .social_links_header {
   display: flex;
