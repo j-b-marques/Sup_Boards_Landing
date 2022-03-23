@@ -216,6 +216,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  margin-bottom: 200px;
 }
 .services_content_wrapper .second_part_services h3 {
   font-size: 1.8rem;
@@ -251,4 +252,57 @@ main {
 }
 .services_content_wrapper .second_part_services .services_explained .service .sv_ex p {
   font-size: 0.8rem;
+}
+.services_content_wrapper .contact_services_wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.services_content_wrapper .contact_services_wrapper .img_contact {
+  width: 50%;
+}
+.services_content_wrapper .contact_services_wrapper .img_contact img {
+  width: 400px;
+  margin-left: 50px;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact > * {
+  color: black;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact form {
+  width: 60%;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact form input {
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact form input:nth-child(1) {
+  margin-bottom: 15px;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact form input:focus {
+  border: 1px solid #2b9db5;
+  outline: 1px solid #2b9db5;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact form button {
+  width: 100%;
+  padding: 8px 0;
+  background-color: #2b9db5;
+  border-radius: 5px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=styles.css.map */

@@ -28,7 +28,7 @@ main {
       color: black;
       margin-bottom: 30px;
     }
-  
+
     .video_descript {
       display: flex;
       justify-content: center;
@@ -48,6 +48,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    margin-bottom: 200px;
 
     h3 {
       font-size: 1.8rem;
@@ -72,18 +73,82 @@ main {
           width: 50px;
         }
 
-        .sv_ex{
+        .sv_ex {
           display: flex;
           flex-direction: column;
           gap: 10px;
 
-          h4{
+          h4 {
             font-size: 1.1rem;
             font-family: $title-font;
           }
-          p{
-            font-size: .8rem;
+          p {
+            font-size: 0.8rem;
           }
+        }
+      }
+    }
+  }
+
+  .contact_services_wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .img_contact {
+      width: 50%;
+
+      img {
+        width: 400px;
+        margin-left: 50px;
+      }
+    }
+
+    .form_contact {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      & > * {
+        color: black;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+
+      form {
+        width: 60%;
+
+        input {
+          width: 100%;
+          padding: 8px 0;
+          border-radius: 5px;
+        }
+
+        input:nth-child(1) {
+          margin-bottom: 15px;
+        }
+
+        input:focus {
+          border: 1px solid $brand-color;
+          outline: 1px solid $brand-color;
+        }
+
+        button {
+          width: 100%;
+          padding: 8px 0;
+          background-color: $brand-color;
+          border-radius: 5px;
+          color: white;
+          font-family: $body-font;
         }
       }
     }
