@@ -1,6 +1,4 @@
-# 📱 Title
-
-## 📱 Subtitle
+# 📱 Sub Boards Landing
 
 - Landing Page for an Travel Experience
 - Based in a design concept previewed in the image below
