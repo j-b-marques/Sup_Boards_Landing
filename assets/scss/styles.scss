@@ -28,7 +28,6 @@ main {
       color: black;
       margin-bottom: 30px;
     }
-
     .video_descript {
       display: flex;
       justify-content: center;
@@ -48,7 +47,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     h3 {
       font-size: 1.8rem;
@@ -102,6 +101,7 @@ main {
       img {
         width: 400px;
         margin-left: 50px;
+        border-radius: 10px;
       }
     }
 
@@ -172,7 +172,7 @@ main {
   }
 
   .swiper {
-    width: 750px;
+    width: 850px;
   }
 
   .cards_wrapper {
@@ -189,6 +189,10 @@ main {
 
       .img_wrapper {
         margin-bottom: 10px;
+
+        img {
+          border-radius: 5px;
+        }
       }
       h2 {
         color: black;

@@ -218,7 +218,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .services_content_wrapper .second_part_services h3 {
   font-size: 1.8rem;
@@ -267,6 +267,7 @@ main {
 .services_content_wrapper .contact_services_wrapper .img_contact img {
   width: 400px;
   margin-left: 50px;
+  border-radius: 10px;
 }
 .services_content_wrapper .contact_services_wrapper .form_contact {
   display: flex;
@@ -324,7 +325,7 @@ main {
   color: black;
 }
 .showcase_wrapper .swiper {
-  width: 750px;
+  width: 850px;
 }
 .showcase_wrapper .cards_wrapper {
   margin-bottom: 50px;
@@ -340,6 +341,9 @@ main {
 }
 .showcase_wrapper .cards_wrapper .card .img_wrapper {
   margin-bottom: 10px;
+}
+.showcase_wrapper .cards_wrapper .card .img_wrapper img {
+  border-radius: 5px;
 }
 .showcase_wrapper .cards_wrapper .card h2 {
   color: black;
