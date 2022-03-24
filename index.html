@@ -10,7 +10,7 @@
     <!--=============== SWIPER JS ===============-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!--=============== SCROLL REVEAL===============-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--  <script src="https://unpkg.com/scrollreveal"></script> -->
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -169,53 +169,72 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolore optio, molestias animi
                             quidem nihil beatae repudiandae dignissimos facere labore?</p>
                     </div>
-                    <div class="cards_wrapper">
-                        <div class="card card_1">
-                            <img src="assets/img/contact.jpg" alt="Showcase">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
-                            <div class="card_button">
-                                <a href="#">Reserver</a>
-                                <span>29.08.2022</span>
+                    <div class="swiper">
+                        <div class="cards_wrapper swiper-wrapper">
+                            <div class="card card_1 swiper-slide">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/contact.jpg" alt="Showcase">
+                                </div>
+
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
+                                <div class="card_button">
+                                    <a href="#">Reserver</a>
+                                    <span>29.08.2022</span>
+                                </div>
+                            </div>
+                            <div class="card card_2 swiper-slide">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/contact.jpg" alt="Showcase">
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
+                                <div class="card_button">
+                                    <a href="#">Reserver</a>
+                                    <span>29.08.2022</span>
+                                </div>
+                            </div>
+                            <div class="card card_3 swiper-slide">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/contact.jpg" alt="Showcase">
+                                </div>
+
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
+                                <div class="card_button">
+                                    <a href="#">Reserver</a>
+                                    <span>29.08.2022</span>
+                                </div>
+                            </div>
+                            <div class="card card_4 swiper-slide">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/contact.jpg" alt="Showcase">
+                                </div>
+
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
+                                <div class="card_button">
+                                    <a href="#">Reserver</a>
+                                    <span>29.08.2022</span>
+                                </div>
+                            </div>
+                            <div class="card card_5 swiper-slide">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/contact.jpg" alt="Showcase">
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
+                                <div class="card_button">
+                                    <a href="#">Reserver</a>
+                                    <span>29.08.2022</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="card card_2">
-                            <img src="assets/img/contact.jpg" alt="Showcase">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
-                            <div class="card_button">
-                                <a href="#">Reserver</a>
-                                <span>29.08.2022</span>
-                            </div>
-                        </div>
-                        <div class="card card_3">
-                            <img src="assets/img/contact.jpg" alt="Showcase">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
-                            <div class="card_button">
-                                <a href="#">Reserver</a>
-                                <span>29.08.2022</span>
-                            </div>
-                        </div>
-                        <div class="card card_4">
-                            <img src="assets/img/contact.jpg" alt="Showcase">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
-                            <div class="card_button">
-                                <a href="#">Reserver</a>
-                                <span>29.08.2022</span>
-                            </div>
-                        </div>
-                        <div class="card card_5">
-                            <img src="assets/img/contact.jpg" alt="Showcase">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sit.</p>
-                            <div class="card_button">
-                                <a href="#">Reserver</a>
-                                <span>29.08.2022</span>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
+
+
+
                 </div>
             </div>
         </section>
@@ -229,6 +248,20 @@
     <script src="assets/js/main.js"></script>
     <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

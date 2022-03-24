@@ -1,4 +1,4 @@
-@use "config" as *;
+@use 'config' as *;
 
 /**Develop Styles*/
 
@@ -156,10 +156,9 @@ main {
 }
 
 /*****2PArte****/
-
 .showcase_wrapper {
   .showcase_leads {
-    width: 50%;
+    width: 45ch;
     margin-bottom: 50px;
     h3 {
       color: black;
@@ -172,49 +171,54 @@ main {
     }
   }
 
-  .cards_wrapper{
-    display: flex;
-    gap: 20px;
+  .swiper {
+    width: 750px;
+  }
 
-    .card{
+  .cards_wrapper {
+    margin-bottom: 50px;
+
+    .card {
       padding: 10px;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
       background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      img{
-        max-width: 100%;
+      .img_wrapper {
         margin-bottom: 10px;
       }
-      h2{
+      h2 {
         color: black;
         font-size: 1.2rem;
         font-weight: 800;
         margin-bottom: 10px;
       }
-      p{
+      p {
         color: black;
-        font-size: .8rem;
-        margin-bottom: 10px;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
       }
 
-      .card_button{
+      .card_button {
         display: flex;
-        gap: 8px;
+        gap: 12px;
         align-items: center;
         margin-bottom: 10px;
 
-        a{
+        a {
           background-color: $action-color;
           padding: 10px 30px;
-          font-size: .8rem;
+          font-size: 0.8rem;
           color: white;
           border-radius: 5px;
         }
-        span{
+        span {
           color: black;
         }
       }
     }
-
   }
 }
