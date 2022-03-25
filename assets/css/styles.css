@@ -92,6 +92,10 @@ header .header_wrapper .nav_bar {
   align-items: center;
   padding-top: 35px;
 }
+header .header_wrapper .nav_bar .logo span {
+  font-size: 2rem;
+  font-weight: 800;
+}
 header .header_wrapper .content_header_wrapper {
   display: flex;
   align-items: flex-end;
@@ -122,6 +126,11 @@ header .header_wrapper .content_header_wrapper .header_main_content button {
   border-radius: 2px;
   text-transform: lowercase;
   border: none;
+  transition: 0.5 ease-in-out;
+}
+header .header_wrapper .content_header_wrapper .header_main_content button:hover {
+  scale: 1.1;
+  transition: 0.5 all;
 }
 header .header_wrapper .content_header_wrapper .header_main_content .bottom_content {
   display: flex;
@@ -171,6 +180,13 @@ header nav * {
 header nav .nav_links {
   display: flex;
   gap: 30px;
+  font-size: 1.5rem;
+}
+header nav .nav_links a:hover {
+  color: #1b998b;
+}
+header nav .contact_nav a {
+  font-size: 1.5rem;
 }
 
 /******ALL FILES TO IMPORT*****/
