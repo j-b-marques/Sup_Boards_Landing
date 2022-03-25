@@ -23,12 +23,6 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3 {
-  color: #2b9db5;
-}
-
 ul {
   list-style: none;
 }
@@ -126,11 +120,10 @@ header .header_wrapper .content_header_wrapper .header_main_content button {
   border-radius: 2px;
   text-transform: lowercase;
   border: none;
-  transition: 0.5 ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 header .header_wrapper .content_header_wrapper .header_main_content button:hover {
   scale: 1.1;
-  transition: 0.5 all;
 }
 header .header_wrapper .content_header_wrapper .header_main_content .bottom_content {
   display: flex;
@@ -183,7 +176,7 @@ header nav .nav_links {
   font-size: 1.5rem;
 }
 header nav .nav_links a:hover {
-  color: #1b998b;
+  color: #ffb703;
 }
 header nav .contact_nav a {
   font-size: 1.5rem;
@@ -218,6 +211,19 @@ main {
   color: black;
   margin-bottom: 30px;
 }
+.services_content_wrapper .first_part_services .videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+.services_content_wrapper .first_part_services .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .services_content_wrapper .first_part_services .video_descript {
   display: flex;
   justify-content: center;
@@ -248,7 +254,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  row-gap: 45px;
+  gap: 45px;
 }
 .services_content_wrapper .second_part_services .services_explained .service {
   width: 40%;
@@ -256,8 +262,9 @@ main {
   align-items: center;
   gap: 10px;
 }
-.services_content_wrapper .second_part_services .services_explained .service img {
-  width: 50px;
+.services_content_wrapper .second_part_services .services_explained .service i {
+  font-size: 2rem;
+  color: #2b9db5;
 }
 .services_content_wrapper .second_part_services .services_explained .service .sv_ex {
   display: flex;
@@ -327,9 +334,16 @@ main {
 }
 
 /*****2PArte****/
+.showcase_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 92px;
+}
 .showcase_wrapper .showcase_leads {
   width: 45ch;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .showcase_wrapper .showcase_leads h3 {
   color: black;
@@ -387,4 +401,64 @@ main {
 }
 .showcase_wrapper .cards_wrapper .card .card_button span {
   color: black;
+}
+
+footer {
+  padding: 50px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b9db5;
+}
+footer .first_info_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+footer .first_info_wrapper .brand_lead_wp {
+  margin: auto 0;
+}
+footer .first_info_wrapper .brand_lead_wp h3 {
+  display: block;
+  margin-bottom: 5px;
+}
+footer .first_info_wrapper .links_wp {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+footer .first_info_wrapper .links_wp a {
+  color: white;
+  cursor: pointer;
+}
+footer .first_info_wrapper .links_wp a:hover {
+  color: #ffb703;
+}
+footer .first_info_wrapper .button_wp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer .first_info_wrapper .button_wp .btn_footer {
+  border: 1.5px solid white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+footer .first_info_wrapper .button_wp .btn_footer > * {
+  color: white;
+  font-size: 1rem;
+}
+footer hr {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  border: black;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=styles.css.map */

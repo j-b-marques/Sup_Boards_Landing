@@ -28,6 +28,22 @@ main {
       color: black;
       margin-bottom: 30px;
     }
+
+    .videoWrapper {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      margin-bottom: 20px;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
     .video_descript {
       display: flex;
       justify-content: center;
@@ -61,15 +77,16 @@ main {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      row-gap: 45px;
+      gap: 45px;
 
       .service {
         width: 40%;
         display: flex;
         align-items: center;
         gap: 10px;
-        img {
-          width: 50px;
+        i {
+          font-size: 2rem;
+          color: $brand-color;
         }
 
         .sv_ex {
@@ -157,9 +174,14 @@ main {
 
 /*****2PArte****/
 .showcase_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 92px;
   .showcase_leads {
     width: 45ch;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     h3 {
       color: black;
       font-family: $title-font;
@@ -224,5 +246,71 @@ main {
         }
       }
     }
+  }
+}
+//* Footer */
+footer {
+  padding: 50px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $brand-color;
+
+  .first_info_wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    .brand_lead_wp {
+      margin: auto 0;
+      h3 {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+
+    .links_wp {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+      a {
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: #ffb703;
+        }
+      }
+    }
+
+    .button_wp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .btn_footer {
+        border: 1.5px solid white;
+        padding: 5px 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+
+        & > * {
+          color: white;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border: black;
+    margin-bottom: 30px;
   }
 }
