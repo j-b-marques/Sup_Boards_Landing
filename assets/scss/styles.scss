@@ -164,8 +164,16 @@ main {
           padding: 8px 0;
           background-color: $brand-color;
           border-radius: 5px;
+          text-transform: uppercase;
+          border: none;
+          font-weight: 700;
           color: white;
           font-family: $body-font;
+          cursor: pointer;
+
+          &:hover{
+            opacity: .85;
+          }
         }
       }
     }

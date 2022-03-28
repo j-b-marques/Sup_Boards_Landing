@@ -113,17 +113,20 @@ header .header_wrapper .content_header_wrapper .header_main_content p {
   width: 80%;
 }
 header .header_wrapper .content_header_wrapper .header_main_content button {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: none;
   padding: 7px 40px;
   background-color: #2b9db5;
   color: white;
   border-radius: 2px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   border: none;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 header .header_wrapper .content_header_wrapper .header_main_content button:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 header .header_wrapper .content_header_wrapper .header_main_content .bottom_content {
   display: flex;
@@ -329,8 +332,15 @@ main {
   padding: 8px 0;
   background-color: #2b9db5;
   border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
   color: white;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.services_content_wrapper .contact_services_wrapper .form_contact form button:hover {
+  opacity: 0.85;
 }
 
 /*****2PArte****/
